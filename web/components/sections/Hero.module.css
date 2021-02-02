@@ -30,9 +30,15 @@
 .content {
   width: 100%;
   max-width: var(--width-small);
-  padding: 0 1.5em;
+  padding-top: 12rem;
   box-sizing: border-box;
   z-index: 1;
+
+  @media (--media-max-small) {
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    /* padding-h: 13rem; */
+  }
 }
 
 .title {
@@ -43,12 +49,12 @@
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
   margin: 0;
   padding: 0;
-  padding-top: 12.5rem;
+  /* padding-top: 12.5rem; */
 
   @media (--media-min-medium) {
     font-size: var(--font-title1-size);
     line-height: var(--font-title1-line-height);
-    padding-top: 15rem;
+    /* padding-top: 13rem; */
   }
 }
 
