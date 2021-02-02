@@ -8,11 +8,11 @@ export default {
       type: 'string',
       title: 'Heading',
     },
-    {
-      name: 'tagline',
-      type: 'simplePortableText',
-      title: 'Tagline',
-    },
+    // {
+    //   name: 'tagline',
+    //   type: 'simplePortableText',
+    //   title: 'Tagline',
+    // },
     {
       name: 'backgroundImage',
       type: 'image',
@@ -43,7 +43,7 @@ export default {
         title,
         subtitle: 'Hero section',
         media,
-      };
+      }
     },
   },
-};
+}
