@@ -12,7 +12,7 @@ function urlFor(source) {
 }
 
 function Hero(props) {
-  const { heading, backgroundImage, tagline, ctas } = props;
+  const { heading, backgroundImage, ctas } = props;
 
   const style = backgroundImage
     ? {
@@ -25,7 +25,6 @@ function Hero(props) {
       <div className={styles.content}>
         <Box sx={{ bg: "rgba(0,0,0,0.44)", p: 4 }}>
           <h1 className={styles.title}>{heading}</h1>
-          {/* <div className={styles.tagline}>{tagline && <SimpleBlockContent blocks={tagline} />}</div> */}
         </Box>
         {ctas && (
           <div className={styles.ctas}>
@@ -42,7 +41,6 @@ function Hero(props) {
 Hero.propTypes = {
   heading: PropTypes.string,
   backgroundImage: PropTypes.object,
-  tagline: PropTypes.array,
   ctas: PropTypes.arrayOf(PropTypes.object),
 };
 

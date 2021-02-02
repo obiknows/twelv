@@ -23,6 +23,7 @@ export default {
         { type: 'imageSection' },
         { type: 'mailchimp' },
         { type: 'textSection' },
+        { type: 'donateSection' },
       ],
     },
     {
@@ -47,4 +48,4 @@ export default {
       media: 'openGraphImage',
     },
   },
-};
+}
